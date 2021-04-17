@@ -1,0 +1,30 @@
+<div class="container">
+
+    <h1 class="mt-5">todo-app</h1>
+    <button type="button" (click)="checkButtonDisplay()" class="btn btn-primary mt-3 mb-3">{{buttonDisplay}}</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th class="w-75">Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let data of allData'>
+                <td scope="row">{{data.id}}</td>
+                <td>{{data.title}}</td>
+                <td><input type="checkbox" [checked]="data.completed">
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <input type="text" class="form-control" [formControl]="title" name="" id="" aria-describedby="helpId"
+        placeholder="Add a title...">
+
+    <button type="button" class="btn btn-primary" (click)="addAtodo()">Add Todo</button>
+
+</div>
