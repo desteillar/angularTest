@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testGit"
+    }
+  },
+  "defaultProject": "testGit",
+  "cli": {
+    "analytics": "b460b3c4-2391-4006-a1f2-2194981e6843"
+  }
 }
